@@ -1,16 +1,25 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <base target="_top">
-</head>
+---
+layout: default
+title: Home
+---
 
 <body>
-    AsobiDyne Site<br>
+    <h1>AsobiDyne Site since 2021.4/25</h1><br>
     <br>
     【リモコンダイン】 <s>apk</s> <s>movies</s><br>
     <br>
-    AsobiDyne GitHub Web since 2021.4/25<br>
+    <br>
 </body>
 
-</html>
+
+
+<h2>Latest Posts</h2>
+<ul>
+    {% for post in site.posts %}
+    <li>
+        　 {{ post.date | date: "%Y-%m-%d" }}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
+    </li>
+    {% endfor %}
+</ul>
