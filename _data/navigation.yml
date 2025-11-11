@@ -5,7 +5,7 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "About"
-    url: /about/
-  - title: "Production"
+  #- title: "About"
+  #  url: /about/
+  - title: "作品一覧"
     url: /production/    
