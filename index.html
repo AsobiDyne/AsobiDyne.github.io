@@ -1,25 +1,7 @@
 ---
-layout: default
-title: Home
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+author_profile: true
 ---
-
-<body>
-    <h1>AsobiDyne Site since 2021.4/25</h1><br>
-    <br>
-    【リモコンダイン】 <s>apk</s> <s>movies</s><br>
-    <br>
-    <br>
-</body>
-
-
-
-<h2>Latest Posts</h2>
-<ul>
-    {% for post in site.posts %}
-    <li>
-        　 {{ post.date | date: "%Y-%m-%d" }}
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {{ post.excerpt }}
-    </li>
-    {% endfor %}
-</ul>
